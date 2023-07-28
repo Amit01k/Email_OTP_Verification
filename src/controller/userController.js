@@ -87,7 +87,7 @@ const userRegister = async (req, res) => {
                 return res.send(400).send({ status: false, error: err })
             }
             )
-        return res.json({ message: 'Registration successful. Please verify your email with OTP.' });
+        return res.json({ status:true,message: 'Registration successful. Please verify your email with OTP.' });
     }
     catch (err) {
         return res.send(err.message)
