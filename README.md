@@ -61,8 +61,8 @@ $ npm start
   "last_name": {string, mandatory},
   "phone_number": {string, mandatory, unique},
   "email": {string, mandatory, valid email, unique},
-  "otp":{Number},
-  "isVerified" :{Boolean,default:false}
+  "otp": {Number},
+  "isVerified": {Boolean,default:false}
   "createdAt": {timestamp},
   "updatedAt": {timestamp}
 }
