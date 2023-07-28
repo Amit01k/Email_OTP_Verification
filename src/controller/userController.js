@@ -16,14 +16,7 @@ const transporter = nodemailer.createTransport({
 const isrequestBody = (requestBody) => {
     return Object.keys(requestBody).length > 0
 }
-// const isValidReferralCode = (referral_code) => {
-//     return ['ABCD', 'EFGH', 'IJKL','MNOP','QRST'].indexOf(referral_code) !== -1
 
-// }
-//isValidobjectId function, checking input id is valiad or not according to mongoDB id.
-const isValidobjectId = (objectId) => {
-    return mongoose.Types.ObjectId.isValid(objectId)
-}
 //isValid will check input field,input field undefined, null, string and input length=0 or not
 const isValid = (value) => {
     if (typeof value === "undefined" || value === null)
@@ -34,7 +27,6 @@ const isValid = (value) => {
         return true
 }
 //userRegister function for create new user
-const inputUser = []
 const userRegister = async (req, res) => {
     try {
         if (!isrequestBody(req.body)) {
