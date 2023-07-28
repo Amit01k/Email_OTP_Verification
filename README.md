@@ -11,12 +11,12 @@
 
 ### Clone repo
 ```sh
-$ https://github.com/Amit01k/Email_OTP_Verification.git
+$ git clone https://github.com/Amit01k/Email_OTP_Verification.git
 ```
 
 ### Open Email_OTP_Verification Folder
 ```sh
-$ Email_OTP_Verification
+$ cd Email_OTP_Verification
 ```
 ### Install All Dependencies
 ```sh
